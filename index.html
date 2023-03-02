@@ -13,6 +13,25 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: rgb(81,51,165);">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html"><img src="Images/logo.png" height="30" width="40"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header class="jumbotron" style="background-color: blueviolet;">
         <div class="container">
@@ -26,7 +45,8 @@
                     <img src="Images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-items-center">
-                    <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                    <a type="button" class="btn btn-warning btn-block" 
+                    href="#reservation-form" data-target="#reserveModal">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -84,7 +104,7 @@
             </div>
         </div>
 
-        <div class="card" style="max-width:fit-content">
+        <div class="card" id="reservation-form" style="max-width:fit-content">
             <div class="card-header bg-warning">
                     <!-- ID scroll is connected with reserve table button -->
                     <h3 style="color:white">Reserve a table</h3>
